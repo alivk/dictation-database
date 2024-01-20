@@ -7,6 +7,7 @@ One Target Homework - 18 Jan 2024
 #### password
 NA
 #### describe
+```
 pollute | contaminate; make impure
 censor | a person authorized to suppress unacceptable material
 prohibited | forbidden by law
@@ -17,3 +18,4 @@ conservative | resistant to change
 appropriate | suitable for a particular person, place, or situation
 disinterested | unaffected by concern for one's own welfare
 chaotic | completely unordered and unpredictable and confusing
+```
