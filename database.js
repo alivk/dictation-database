@@ -21,6 +21,20 @@ const JSONList = [
         "mode": "vocabulary"
     },
     {
+        "name": "五年级高级华文听写表（上册）- 第二课:身体会说话",
+        "password": "",
+        "describe": "答案 | 答案<br>代表 | 代表<br>昏暗 | 昏暗<br>电脑 | 电脑<br>保持 | 保持<br>户外活动 | 户外活动<br>而且 | 而且<br>放松心情 | 放松心情<br>盯着不放 | 盯着不放<br>眼圈 | 眼圈<br>伤害 | 伤害<br>习惯 | 习惯<br>小明不但学习成绩好 | 小明不但学习成绩好<br>而且还乐于助人 | 而且还乐于助人<br>大家都很喜欢他 | 大家都很喜欢他<br>一到游乐场 | 一到游乐场<br>妹妹的眼睛就亮了起来 | 妹妹的眼睛就亮了起来<br>把回家这件事抛到了九霄云外 | 把回家这件事抛到了九霄云外",
+        "id": "vocabulary-p5chinese-zhonghuapri002",
+        "mode": "vocabulary"
+    },
+    {
+        "name": "五年级高级华文听写表（上册）- 第一课:到户外去",
+        "password": "",
+        "describe": "露营 | 露营<br>集合 | 集合<br>鞋袜 | 鞋袜<br>防止 | 防止<br>单独行动 | 单独行动<br>贵重物品 | 贵重物品<br>绑紧 | 绑紧<br>冠军 | 冠军<br>摔倒 | 摔倒<br>相互配合 | 相互配合<br>轮流 | 轮流<br>擦干净 | 擦干净<br>一顿饭 | 一顿饭<br>营火会结束了 | 营火会结束了<br>我虽然很累 | 我虽然很累<br>但是却感到非常充实 | 但是却感到非常充实<br>我打开饭盒 | 我打开饭盒<br>不管三七二十一 | 不管三七二十一<br>狼吞虎咽地吃了起来 | 狼吞虎咽地吃了起来<br>不一会儿 | 不一会儿<br>就把饭菜吃了个精光 | 就把饭菜吃了个精光",
+        "id": "vocabulary-p5chinese-zhonghuapri001",
+        "mode": "vocabulary"
+    },
+    {
         "name": "Sentence - Homework - 18 Jan 2024",
         "password": "",
         "describe": "1.being over-generous or lenient / someone who gives themselves lots of treats.<br>2.not having the necessary skills needed to do something well.<br>3.not equipped / not having weapons.<br>4.smart.<br>5.manage to get out of trouble.<br>6.act in a reckless manner.<br>7.teach or introduce someone to a new topic or skill.",
