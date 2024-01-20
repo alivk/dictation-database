@@ -1,11 +1,15 @@
 **id**
 sg-primary02-english-onetarget-hap241
+
 **mode**
 vocabulary
+
 **name**
 One Target Homework - 18 Jan 2024
+
 **password**
 NA
+
 **describe**
 pollute | contaminate; make impure
 censor | a person authorized to suppress unacceptable material
