@@ -1,12 +1,4 @@
-#### id
-sg-primary02-english-onetarget-hap242
-#### mode
-vocabulary
-#### name
-One Target Homework - 20 Jan 2024
-#### password
-NA
-#### describe
+### One Target Homework - 20 Jan 2024
 ```
 inconceivable | totally unlikely
 stimulate | cause to act in a specified manner
