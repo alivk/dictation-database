@@ -1,12 +1,4 @@
-#### id
-sg-primary02-english-onetarget-hap243
-#### mode
-vocabulary
-#### name
-One Target Homework - 22 Jan 2024
-#### password
-NA
-#### describe
+### One Target Homework - 22 Jan 2024
 ```
 harmful | causing or capable of causing damage
 swamp | low land that is seasonally flooded
