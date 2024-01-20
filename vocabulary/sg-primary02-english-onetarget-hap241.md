@@ -1,21 +1,12 @@
-**id**
-
+#### id
 sg-primary02-english-onetarget-hap241
-
-**mode**
-
+#### mode
 vocabulary
-
-**name**
-
+#### name
 One Target Homework - 18 Jan 2024
-
-**password**
-
+#### password
 NA
-
-**describe**
-
+#### describe
 pollute | contaminate; make impure
 censor | a person authorized to suppress unacceptable material
 prohibited | forbidden by law
