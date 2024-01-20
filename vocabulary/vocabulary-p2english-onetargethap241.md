@@ -1,4 +1,5 @@
 ### One Target Homework - 18 Jan 2024
+PASSWORD = ""
 ```
 pollute | contaminate; make impure
 censor | a person authorized to suppress unacceptable material

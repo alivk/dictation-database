@@ -1,4 +1,5 @@
 ### One Target Homework - 20 Jan 2024
+PASSWORD = ""
 ```
 inconceivable | totally unlikely
 stimulate | cause to act in a specified manner

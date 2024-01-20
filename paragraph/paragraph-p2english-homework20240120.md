@@ -1,0 +1,5 @@
+### Paragraph - Homework - 20 Jan 2024
+PASSWORD = ""
+```
+Once upon a sunny morning in a quaint little town, there lived a young boy named Timmy who had an insatiable curiosity about the world. He often roamed the lush fields and meandered along the bubbling brooks that adorned his beautiful hometown. One day, while exploring a dense, untouched forest, he stumbled upon an ancient, weathered map tucked away in the crevices of a towering oak tree. The map, though faded, hinted at a hidden treasure buried deep within the forest. Excited, Timmy embarked on a daring adventure. He navigated through the thicket, his heart pounding with anticipation with every step he took towards the elusive treasure. As he unearthed a rusty old chest filled with gleaming gold coins and jeweled trinkets, his eyes sparkled with the thrill of discovery. This was a day he would cherish forever, a day that fueled his endless imagination and adventurous spirit, making the vast world seem a little smaller and much friendlier.
+```

@@ -1,4 +1,5 @@
 ### One Target Homework - 22 Jan 2024
+PASSWORD = ""
 ```
 harmful | causing or capable of causing damage
 swamp | low land that is seasonally flooded
