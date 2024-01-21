@@ -1,17 +1,26 @@
 AWSTemplateFormatVersion: 2010-09-09
-Description: CloudFormation template for s3 bucket - Semi Random Name
-    
+Description: CloudFormation template for s3 bucket with a semi-random name
+
 Resources:
   BucketWithSemiRandomName:
     Type: AWS::S3::Bucket
-    Description: Creating Amazon S3 bucket from CloudFormation
     Properties:
       BucketName:
-        !Sub
-          - 'alick-testbucket-withsemirandomname-${RandomGUID}'
-          - { RandomGUID: !Select [0, !Split ["-", !Select [2, !Split ["/", !Ref AWS::StackId ]]]] }
-          
+        Fn::Sub:
+          - "alick-testbucket-${RandomGUID}"
+          - RandomGUID:
+              Fn::Select:
+                - 0
+                - Fn::Split:
+                    - "-"
+                    - Fn::Select:
+                        - 2
+                        - Fn::Split:
+                            - "/"
+                            - Ref: AWS::StackId
+
 Outputs:
   S3Bucket:
-    Description: Bucket Created using this template.
-    Value: !Ref BucketWithSemiRandomName
+    Description: "Bucket Created using this template."
+    Value:
+      Ref: BucketWithSemiRandomName
