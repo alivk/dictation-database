@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Description: >
   Author: Alick Li
-  Purpose: Class Demostration
+  Purpose: Class Demonstration
   Info: This yaml template is used for DynamoDB, S3, and Lambda setup for data import
 Parameters:
   BucketName:
@@ -18,6 +18,7 @@ Parameters:
     Type: String
     Description: Name of the Lambda function
     Default: demo-s3-dictationdatabase
+
 Resources:
   MyDynamoDBTable:
     Type: AWS::DynamoDB::Table
@@ -35,15 +36,6 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: !Ref BucketName
-      NotificationConfiguration:
-        LambdaConfigurations:
-          - Event: 's3:ObjectCreated:*'
-            Filter:
-              S3Key:
-                Rules:
-                  - Name: suffix
-                    Value: database.js
-            Function: !Ref MyLambdaFunction
 
   LambdaExecutionRole:
     Type: AWS::IAM::Role
@@ -69,6 +61,7 @@ Resources:
                   - dynamodb:PutItem
                   - dynamodb:DescribeTable
                 Resource: !GetAtt MyDynamoDBTable.Arn
+
   MyLambdaFunction:
     Type: AWS::Lambda::Function
     Properties:
@@ -112,16 +105,15 @@ Resources:
   LambdaInvokePermission:
     Type: AWS::Lambda::Permission
     Properties:
-      FunctionName: !Ref MyLambdaFunction
+      FunctionName: !GetAtt MyLambdaFunction.Arn
       Action: lambda:InvokeFunction
       Principal: s3.amazonaws.com
       SourceArn: !GetAtt MyS3Bucket.Arn
 
-
 Outputs:
   LambdaFunctionArn:
     Description: The ARN of the Lambda function
-    Value: !Ref MyLambdaFunction
+    Value: !GetAtt MyLambdaFunction.Arn
 
   DynamoDBTableArn:
     Description: The ARN of the DynamoDB table
