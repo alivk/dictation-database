@@ -43,7 +43,7 @@ Resources:
               S3Key:
                 Rules:
                   - Name: prefix
-                    Value: test/
+                    Value: test
                   - Name: suffix
                     Value: .js
             Function: !GetAtt MyLambdaFunction.Arn
