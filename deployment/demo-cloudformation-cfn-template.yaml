@@ -35,6 +35,15 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: !Ref BucketName
+      NotificationConfiguration:
+        LambdaConfigurations:
+          - Event: 's3:ObjectCreated:*'
+            Filter:
+              S3Key:
+                Rules:
+                  - Name: suffix
+                    Value: database.js
+            Function: !Ref MyLambdaFunction
 
   LambdaExecutionRole:
     Type: AWS::IAM::Role
@@ -108,19 +117,6 @@ Resources:
       Principal: s3.amazonaws.com
       SourceArn: !GetAtt MyS3Bucket.Arn
 
-  S3BucketNotification:
-    Type: AWS::S3::Bucket
-    Properties:
-      Bucket: !Ref MyS3Bucket
-      NotificationConfiguration:
-        LambdaConfigurations:
-          - Event: 's3:ObjectCreated:*'
-            Filter:
-              S3Key:
-                Rules:
-                  - Name: suffix
-                    Value: database.js
-            Function: !Ref MyLambdaFunction
 
 Outputs:
   LambdaFunctionArn:
