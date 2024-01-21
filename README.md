@@ -1,6 +1,6 @@
 ### README
 
-This is example portal database.
+This is the dication database for examportal.
 
 ### CDN of database
 There might be cache difference between the actual version and cdn link
