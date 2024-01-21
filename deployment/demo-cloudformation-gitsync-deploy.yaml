@@ -1,4 +1,4 @@
-template-file-path: deplyment/demo-cloudformation-cfn-template.yaml
+template-file-path: deployment/demo-cloudformation-cfn-template.yaml
 parameters:
   BucketName: demo-s3-dictationdatabase
   TableName: demo-s3-dictationdatabase
