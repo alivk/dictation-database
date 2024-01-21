@@ -68,8 +68,8 @@ Resources:
                   - s3:GetObject
                 Resource: !GetAtt MyS3Bucket.Arn
                 Resource:
-                  - !Sub arn:aws:s3:::${MyS3Bucket}
-                  - !Sub arn:aws:s3:::${MyS3Bucket}/*
+                  - !Sub arn:aws:s3:::${BucketName}
+                  - !Sub arn:aws:s3:::${BucketName}/*
               - Effect: Allow
                 Action:
                   - dynamodb:PutItem
@@ -122,7 +122,7 @@ Resources:
       FunctionName: !GetAtt MyLambdaFunction.Arn
       Action: lambda:InvokeFunction
       Principal: s3.amazonaws.com
-      SourceArn: !Sub arn:aws:s3:::${MyS3Bucket}
+      SourceArn: !Sub arn:aws:s3:::${BucketName}
       
 Outputs:
   LambdaFunctionArn:
@@ -135,4 +135,4 @@ Outputs:
 
   S3BucketName:
     Description: The name of the S3 bucket
-    Value: !Ref MyS3Bucket
+    Value: !Ref BucketName
