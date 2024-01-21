@@ -37,7 +37,7 @@ const JSONList = [
     {
         "name": "One Target Homework JAM List 3",
         "password": "",
-        "describe": "epitome | A perfect example of a particular quality or type.<br>dissect | To cut open and examine the structure of a dead animal or plant.",
+        "describe": "epitome | A perfect example of a particular quality or type.<br>dissect | To cut open and examine the structure of a dead animal or plant.<br>priceless | Extremely valuable and impossible to measure in terms of money.<br>prolific | Producing a large amount of something; highly productive.<br>flustered | Nervous or confused, especially because of being rushed or overwhelmed.<br>prelude | An introduction or opening to something more important.<br>grapple | To struggle or fight with something or someone, often in a physical or figurative sense.<br>embrace | To hold someone closely in one's arms, typically to express affection; to accept or support willingly and enthusiastically.|<br>reluctantly | With hesitation, doubt or dread; unwillingly.",
         "id": "vocabulary-p2english-otelist3",
         "mode": "vocabulary"
     },
