@@ -1,6 +1,0 @@
-template-file-path: deployment/demo-cloudformation-cfn-template.yaml
-parameters:
-  BucketName: demo-s3-dictationdatabase
-  TableName: demo-s3-dictationdatabase
-  LambdaFunctionName: demo-s3-dictationdatabase
-tags: {}
