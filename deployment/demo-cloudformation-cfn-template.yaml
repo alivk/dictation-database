@@ -103,13 +103,13 @@ Resources:
   LambdaInvokePermission:
     Type: AWS::Lambda::Permission
     Properties:
-      FunctionName: !GetAttr MyLambdaFunction.Arn
+      FunctionName: !Ref MyLambdaFunction
       Action: lambda:InvokeFunction
       Principal: s3.amazonaws.com
       SourceArn: !GetAtt MyS3Bucket.Arn
 
   S3BucketNotification:
-    Type: AWS::S3::BucketNotification
+    Type: AWS::S3::Bucket
     Properties:
       Bucket: !Ref MyS3Bucket
       NotificationConfiguration:
@@ -120,12 +120,12 @@ Resources:
                 Rules:
                   - Name: suffix
                     Value: database.js
-            Function: !GetAttr MyLambdaFunction.Arn
+            Function: !Ref MyLambdaFunction
 
 Outputs:
   LambdaFunctionArn:
     Description: The ARN of the Lambda function
-    Value: !GetAttr MyLambdaFunction.Arn
+    Value: !Ref MyLambdaFunction
 
   DynamoDBTableArn:
     Description: The ARN of the DynamoDB table
