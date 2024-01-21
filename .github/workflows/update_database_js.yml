@@ -11,6 +11,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.DICTATIONSECRET }}  # Replace with your secret name
 
     - name: Set up Python
       uses: actions/setup-python@v2
