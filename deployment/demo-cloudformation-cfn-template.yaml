@@ -1,1 +1,136 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: >
+  Author: Alick Li
+  Purpose: Class Demostration
+  Info: This yaml template is used for DynamoDB, S3, and Lambda setup for data import
+Parameters:
+  BucketName:
+    Type: String
+    Description: Name of the S3 bucket
+    Default: demo-s3-dictationdatabase
 
+  TableName:
+    Type: String
+    Description: Name of the DynamoDB table
+    Default: demo-s3-dictationdatabase
+
+  LambdaFunctionName:
+    Type: String
+    Description: Name of the Lambda function
+    Default: demo-s3-dictationdatabase
+Resources:
+  MyDynamoDBTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Ref TableName
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref BucketName
+
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: LambdaS3DynamoDBAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                Resource: !GetAtt MyS3Bucket.Arn
+              - Effect: Allow
+                Action:
+                  - dynamodb:PutItem
+                  - dynamodb:DescribeTable
+                Resource: !GetAtt MyDynamoDBTable.Arn
+  MyLambdaFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: !Ref LambdaFunctionName
+      Runtime: python3.11
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Handler: index.handler
+      Environment: 
+        Variables:
+          TABLE_NAME: !Ref TableName
+          BUCKET_NAME: !Ref BucketName
+      Code:
+        ZipFile: |
+          import json
+          import boto3
+          import os
+  
+          def handler(event, context):
+              # Initialize a DynamoDB client
+              table_name = os.environ['TABLE_NAME']
+              bucket_name = os.environ['BUCKET_NAME']
+              dynamodb = boto3.resource('dynamodb')
+              table = dynamodb.Table(table_name)
+ 
+              # Fetch data from S3
+              s3 = boto3.client('s3')
+              response = s3.get_object(Bucket=bucket_name, Key='database.js')
+              data = response['Body'].read().decode('utf-8').replace('const JSONList = ', '').rstrip(';')
+              items = json.loads(data)
+  
+              # Add items to DynamoDB
+              for item in items:
+                  table.put_item(Item=item)
+  
+              return {
+                  'statusCode': 200,
+                  'body': json.dumps('Data import completed successfully')
+              }
+      Timeout: 120
+
+  LambdaInvokePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !GetAttr MyLambdaFunction.Arn
+      Action: lambda:InvokeFunction
+      Principal: s3.amazonaws.com
+      SourceArn: !GetAtt MyS3Bucket.Arn
+
+  S3BucketNotification:
+    Type: AWS::S3::BucketNotification
+    Properties:
+      Bucket: !Ref MyS3Bucket
+      NotificationConfiguration:
+        LambdaConfigurations:
+          - Event: 's3:ObjectCreated:*'
+            Filter:
+              S3Key:
+                Rules:
+                  - Name: suffix
+                    Value: database.js
+            Function: !GetAttr MyLambdaFunction.Arn
+
+Outputs:
+  LambdaFunctionArn:
+    Description: The ARN of the Lambda function
+    Value: !GetAttr MyLambdaFunction.Arn
+
+  DynamoDBTableArn:
+    Description: The ARN of the DynamoDB table
+    Value: !GetAtt MyDynamoDBTable.Arn
+
+  S3BucketName:
+    Description: The name of the S3 bucket
+    Value: !Ref MyS3Bucket
