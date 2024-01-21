@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: '2010-09-09'
 Description: >
   Author: Alick Li
   Purpose: Class Demonstration
-  Info: This yaml template is used for DynamoDB, S3, and Lambda setup for data import (without S3 eventnotification)
+  Info: This yaml template is used for DynamoDB, S3, and Lambda setup for data import (with S3 eventnotification)
 Parameters:
   BucketName:
     Type: String
@@ -123,7 +123,29 @@ Resources:
                   'body': json.dumps('Data import completed successfully')
               }
       Timeout: 120
-      
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref BucketName
+      NotificationConfiguration:
+        LambdaConfigurations:
+          - Event: 's3:ObjectCreated:*'
+            Filter:
+              S3Key:
+                Rules:
+                  - Name: prefix
+                    Value: test/
+                  - Name: suffix
+                    Value: .js
+            Function: !GetAtt MyLambdaFunction.Arn
+  LambdaInvokePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !GetAtt MyLambdaFunction.Arn
+      Action: lambda:InvokeFunction
+      Principal: s3.amazonaws.com
+      SourceArn: !Sub arn:aws:s3:::${BucketName}
+            
 Outputs:
   LambdaFunctionArn:
     Description: The ARN of the Lambda function
