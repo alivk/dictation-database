@@ -1,1 +1,4 @@
-
+template-file-path: demo-cloudformation-cfn-template.yaml
+parameters:
+  environment: production
+tags: {}
