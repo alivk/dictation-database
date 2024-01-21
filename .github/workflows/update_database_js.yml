@@ -1,0 +1,29 @@
+name: Update database.js
+
+on:
+  push:
+    branches:
+      - main  # or your target branch
+
+jobs:
+  update-js:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'  # specify your Python version
+
+    - name: Run markdown-to-js script
+      run: python markdown-to-js.py  # Adjust the path if necessary
+
+    - name: Commit and push if changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add database.js
+        git commit -m "Update database.js" -a || echo "No changes to commit"
+        git push
