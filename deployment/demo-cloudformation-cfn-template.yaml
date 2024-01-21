@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: '2010-09-09'
 Description: >
   Author: Alick Li
   Purpose: Class Demonstration
-  Info: This yaml template is used for DynamoDB, S3, and Lambda setup for data import
+  Info: This yaml template is used for DynamoDB, S3, and Lambda setup for data import (without S3 eventnotification)
 Parameters:
   BucketName:
     Type: String
