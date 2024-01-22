@@ -14,6 +14,13 @@ const JSONList = [
         "mode": "vocabulary"
     },
     {
+        "name": "One Target Homework JAM List 20240122",
+        "password": "",
+        "describe": "parable | A simple story used to illustrate a moral or spiritual lesson.<br>fable | A short story, typically with animals as characters, conveying a moral.<br>ridicule | The act of making fun of someone or something in a cruel or harsh way.<br>image | A representation of the external form of a person or thing in art or a visual likeness captured by a camera.<br>tyrant | A cruel and oppressive ruler.<br>arbiter | A person who settles a dispute or has ultimate authority in a matter.<br>characteristic | A typical or noticeable quality of someone or something.<br>aggressive | Behaving in a forceful or hostile way; ready to attack or confront.<br>prohibited | Formally forbidden by law, rule, or other authority.<br>naive | Lacking experience, wisdom, or judgement; innocently unaware.",
+        "id": "vocabulary-p2english-onetargetjam20240122.md",
+        "mode": "vocabulary"
+    },
+    {
         "name": "五年级高级华文听写表（上册）- 第二课:身体会说话",
         "password": "",
         "describe": "答案 | 答案<br>代表 | 代表<br>昏暗 | 昏暗<br>电脑 | 电脑<br>保持 | 保持<br>户外活动 | 户外活动<br>而且 | 而且<br>放松心情 | 放松心情<br>盯着不放 | 盯着不放<br>眼圈 | 眼圈<br>伤害 | 伤害<br>习惯 | 习惯<br>小明不但学习成绩好 | 小明不但学习成绩好<br>而且还乐于助人 | 而且还乐于助人<br>大家都很喜欢他 | 大家都很喜欢他<br>一到游乐场 | 一到游乐场<br>妹妹的眼睛就亮了起来 | 妹妹的眼睛就亮了起来<br>把回家这件事抛到了九霄云外 | 把回家这件事抛到了九霄云外",
