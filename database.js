@@ -14,6 +14,13 @@ const JSONList = [
         "mode": "vocabulary"
     },
     {
+        "name": "Zhonghua Homework P2 list 5 - 20 Feb 2024",
+        "password": "",
+        "describe": "squirted | squirted<br>squeak | squeak<br>again | again<br>rain | rain<br>sleep | sleep<br>three | three<br>bleat | bleat<br>flapped | flapped<br>trampled | trampled<br>squabble | squabble",
+        "id": "vocabulary-p2english-zhonghuapri005",
+        "mode": "vocabulary"
+    },
+    {
         "name": "五年级高级华文听写表（上册）- 第二课:身体会说话",
         "password": "",
         "describe": "答案 | 答案<br>代表 | 代表<br>昏暗 | 昏暗<br>电脑 | 电脑<br>保持 | 保持<br>户外活动 | 户外活动<br>而且 | 而且<br>放松心情 | 放松心情<br>盯着不放 | 盯着不放<br>眼圈 | 眼圈<br>伤害 | 伤害<br>习惯 | 习惯<br>小明不但学习成绩好 | 小明不但学习成绩好<br>而且还乐于助人 | 而且还乐于助人<br>大家都很喜欢他 | 大家都很喜欢他<br>一到游乐场 | 一到游乐场<br>妹妹的眼睛就亮了起来 | 妹妹的眼睛就亮了起来<br>把回家这件事抛到了九霄云外 | 把回家这件事抛到了九霄云外",
