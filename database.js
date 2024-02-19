@@ -14,6 +14,13 @@ const JSONList = [
         "mode": "vocabulary"
     },
     {
+        "name": "二年级华文听写3 - 第三课",
+        "password": "",
+        "describe": "耳 | 耳<br>草 | 草<br>舌头 | 舌头<br>非常 | 非常<br>卡片 | 卡片<br>一杯汽水 | 一杯汽水<br>小羊没有家 | 小羊没有家<br>主人把杯子拿给弟弟 | 主人把杯子拿给弟弟",
+        "id": "vocabulary-p2chinese-zhonghuapri003",
+        "mode": "vocabulary"
+    },
+    {
         "name": "Zhonghua Homework P2 list 5 - 20 Feb 2024",
         "password": "",
         "describe": "squirted | squirted<br>squeak | squeak<br>again | again<br>rain | rain<br>sleep | sleep<br>three | three<br>bleat | bleat<br>flapped | flapped<br>trampled | trampled<br>squabble | squabble",
