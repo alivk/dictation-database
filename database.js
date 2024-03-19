@@ -1,22 +1,29 @@
 const JSONList = [
     {
-        "name": "One Target Homework HAP242 - 20 Jan 2024",
+        "name": "One Target Homework JAM List 20240122",
         "password": "",
-        "describe": "inconceivable | totally unlikely<br>stimulate | cause to act in a specified manner<br>essential | basic and fundamental<br>beneficial | promoting or enhancing well-being<br>correlation | a reciprocal connection between two or more things<br>spacious | having ample room<br>relation | the state or quality of having something in common<br>recital | a public instance of repeating something prepared in advance<br>spatial | pertaining to the expanse in which things are located<br>enhance | increase",
-        "id": "vocabulary-p2english-onetargethap242",
+        "describe": "parable | A simple story used to illustrate a moral or spiritual lesson.<br>fable | A short story, typically with animals as characters, conveying a moral.<br>ridicule | The act of making fun of someone or something in a cruel or harsh way.<br>image | A representation of the external form of a person or thing in art or a visual likeness captured by a camera.<br>tyrant | A cruel and oppressive ruler.<br>arbiter | A person who settles a dispute or has ultimate authority in a matter.<br>characteristic | A typical or noticeable quality of someone or something.<br>aggressive | Behaving in a forceful or hostile way; ready to attack or confront.<br>prohibited | Formally forbidden by law, rule, or other authority.<br>naive | Lacking experience, wisdom, or judgement; innocently unaware.",
+        "id": "vocabulary-p2english-onetargetjam20240122",
         "mode": "vocabulary"
     },
     {
-        "name": "One Target Homework HAP245 - 24 Jan 2024",
+        "name": "五年级高级华文听写表（上册）- 第二课:身体会说话",
         "password": "",
-        "describe": "conservative | resistant to change<br>focus | the concentration of attention or energy on something<br>manual | of or relating to the hands<br>epitome | a standard or typical example<br>renaissance | a period of renewed activity and prominence<br>jester | a clown employed to entertain a king or nobleman<br>dissect | cut open or cut apart<br>prelude | something that introduces what follows<br>grapple | work hard to come to terms with or deal with something<br>embrace | squeeze tightly in your arms, usually with fondness",
-        "id": "vocabulary-p2english-onetargethap245",
+        "describe": "答案 | 答案<br>代表 | 代表<br>昏暗 | 昏暗<br>电脑 | 电脑<br>保持 | 保持<br>户外活动 | 户外活动<br>而且 | 而且<br>放松心情 | 放松心情<br>盯着不放 | 盯着不放<br>眼圈 | 眼圈<br>伤害 | 伤害<br>习惯 | 习惯<br>小明不但学习成绩好 | 小明不但学习成绩好<br>而且还乐于助人 | 而且还乐于助人<br>大家都很喜欢他 | 大家都很喜欢他<br>一到游乐场 | 一到游乐场<br>妹妹的眼睛就亮了起来 | 妹妹的眼睛就亮了起来<br>把回家这件事抛到了九霄云外 | 把回家这件事抛到了九霄云外",
+        "id": "vocabulary-p5chinese-zhonghuapri002",
+        "mode": "vocabulary"
+    },
+    {
+        "name": "One Target Homework HAP243 - 22 Jan 2024",
+        "password": "",
+        "describe": "harmful | causing or capable of causing damage<br>swamp | low land that is seasonally flooded<br>menu | a list of dishes available at a restaurant<br>recipe | directions for making something<br>manual | of or relating to the hands<br>ingredient | a component of a mixture or compound<br>grace | elegance and beauty of movement or expression<br>horror | intense and profound fear<br>delight | a feeling of extreme pleasure or satisfaction<br>peaceful | not disturbed by strife or turmoil or war",
+        "id": "vocabulary-p2english-onetargethap243",
         "mode": "vocabulary"
     },
     {
         "name": "二年级华文听写3 - 第三课",
         "password": "",
-        "describe": "耳 | 耳<br>草 | 草<br>舌头 | 舌头<br>非常 | 非常<br>卡片 | 卡片<br>一杯汽水 | 一杯汽水<br>小羊没有家 | 小羊没有家<br>主人把杯子拿给弟弟 | 主人把杯子拿给弟弟",
+        "describe": "耳 | 耳<br>草 | 草<br>舌头 | 舌头<br>非常 | 非常<br>卡片 | 卡片<br>一杯汽水 | 一杯汽水<br>小羊没有家 | 小羊没有家<br>主人把杯子拿给弟弟 | 主人把杯子拿给弟弟<br>主人 | 主人",
         "id": "vocabulary-p2chinese-zhonghuapri003",
         "mode": "vocabulary"
     },
@@ -25,13 +32,6 @@ const JSONList = [
         "password": "",
         "describe": "squirted | squirted<br>squeak | squeak<br>again | again<br>rain | rain<br>sleep | sleep<br>three | three<br>bleat | bleat<br>flapped | flapped<br>trampled | trampled<br>squabble | squabble",
         "id": "vocabulary-p2english-zhonghuapri005",
-        "mode": "vocabulary"
-    },
-    {
-        "name": "五年级高级华文听写表（上册）- 第二课:身体会说话",
-        "password": "",
-        "describe": "答案 | 答案<br>代表 | 代表<br>昏暗 | 昏暗<br>电脑 | 电脑<br>保持 | 保持<br>户外活动 | 户外活动<br>而且 | 而且<br>放松心情 | 放松心情<br>盯着不放 | 盯着不放<br>眼圈 | 眼圈<br>伤害 | 伤害<br>习惯 | 习惯<br>小明不但学习成绩好 | 小明不但学习成绩好<br>而且还乐于助人 | 而且还乐于助人<br>大家都很喜欢他 | 大家都很喜欢他<br>一到游乐场 | 一到游乐场<br>妹妹的眼睛就亮了起来 | 妹妹的眼睛就亮了起来<br>把回家这件事抛到了九霄云外 | 把回家这件事抛到了九霄云外",
-        "id": "vocabulary-p5chinese-zhonghuapri002",
         "mode": "vocabulary"
     },
     {
@@ -56,13 +56,6 @@ const JSONList = [
         "mode": "vocabulary"
     },
     {
-        "name": "One Target Homework HAP243 - 22 Jan 2024",
-        "password": "",
-        "describe": "harmful | causing or capable of causing damage<br>swamp | low land that is seasonally flooded<br>menu | a list of dishes available at a restaurant<br>recipe | directions for making something<br>manual | of or relating to the hands<br>ingredient | a component of a mixture or compound<br>grace | elegance and beauty of movement or expression<br>horror | intense and profound fear<br>delight | a feeling of extreme pleasure or satisfaction<br>peaceful | not disturbed by strife or turmoil or war",
-        "id": "vocabulary-p2english-onetargethap243",
-        "mode": "vocabulary"
-    },
-    {
         "name": "One Target Homework JAM List 20240120",
         "password": "",
         "describe": "epitome | A perfect example of a particular quality or type.<br>dissect | To cut open and examine the structure of a dead animal or plant.<br>priceless | Extremely valuable and impossible to measure in terms of money.<br>prolific | Producing a large amount of something; highly productive.<br>flustered | Nervous or confused, especially because of being rushed or overwhelmed.<br>prelude | An introduction or opening to something more important.<br>grapple | To struggle or fight with something or someone, often in a physical or figurative sense.<br>embrace | To hold someone closely in one's arms, typically to express affection; to accept or support willingly and enthusiastically.|<br>reluctantly | With hesitation, doubt or dread; unwillingly.",
@@ -70,10 +63,17 @@ const JSONList = [
         "mode": "vocabulary"
     },
     {
-        "name": "One Target Homework JAM List 20240122",
+        "name": "One Target Homework HAP245 - 24 Jan 2024",
         "password": "",
-        "describe": "parable | A simple story used to illustrate a moral or spiritual lesson.<br>fable | A short story, typically with animals as characters, conveying a moral.<br>ridicule | The act of making fun of someone or something in a cruel or harsh way.<br>image | A representation of the external form of a person or thing in art or a visual likeness captured by a camera.<br>tyrant | A cruel and oppressive ruler.<br>arbiter | A person who settles a dispute or has ultimate authority in a matter.<br>characteristic | A typical or noticeable quality of someone or something.<br>aggressive | Behaving in a forceful or hostile way; ready to attack or confront.<br>prohibited | Formally forbidden by law, rule, or other authority.<br>naive | Lacking experience, wisdom, or judgement; innocently unaware.",
-        "id": "vocabulary-p2english-onetargetjam20240122",
+        "describe": "conservative | resistant to change<br>focus | the concentration of attention or energy on something<br>manual | of or relating to the hands<br>epitome | a standard or typical example<br>renaissance | a period of renewed activity and prominence<br>jester | a clown employed to entertain a king or nobleman<br>dissect | cut open or cut apart<br>prelude | something that introduces what follows<br>grapple | work hard to come to terms with or deal with something<br>embrace | squeeze tightly in your arms, usually with fondness",
+        "id": "vocabulary-p2english-onetargethap245",
+        "mode": "vocabulary"
+    },
+    {
+        "name": "One Target Homework HAP242 - 20 Jan 2024",
+        "password": "",
+        "describe": "inconceivable | totally unlikely<br>stimulate | cause to act in a specified manner<br>essential | basic and fundamental<br>beneficial | promoting or enhancing well-being<br>correlation | a reciprocal connection between two or more things<br>spacious | having ample room<br>relation | the state or quality of having something in common<br>recital | a public instance of repeating something prepared in advance<br>spatial | pertaining to the expanse in which things are located<br>enhance | increase",
+        "id": "vocabulary-p2english-onetargethap242",
         "mode": "vocabulary"
     },
     {
