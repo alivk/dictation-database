@@ -51,7 +51,7 @@ const JSONList = [
     {
         "name": "One Target Homework HAP241 - 18 Jan 2024",
         "password": "",
-        "describe": "pollute | contaminate; make impure<br>censor | a person authorized to suppress unacceptable material<br>prohibited | forbidden by law<br>endangered | in imminent threat of extinction<br>stimulate | cause to act in a specified manner<br>recital | a public instance of repeating something prepared in advance<br>conservative | resistant to change<br>appropriate | suitable for a particular person, place, or situation<br>disinterested | unaffected by concern for one's own welfare",
+        "describe": "pollute | contaminate; make impure<br>censor | a person authorized to suppress unacceptable material<br>prohibited | forbidden by a law<br>endangered | in imminent threat of extinction<br>stimulate | cause to act in a specified manner<br>recital | a public instance of repeating something prepared in advance<br>conservative | resistant to change<br>appropriate | suitable for a particular person, place, or situation<br>disinterested | unaffected by concern for one's own welfare",
         "id": "vocabulary-p2english-onetargethap241",
         "mode": "vocabulary"
     },
