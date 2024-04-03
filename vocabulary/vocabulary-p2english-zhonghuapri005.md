@@ -6,7 +6,7 @@ squeak | squeak
 again | again
 rain | rain
 sleep | sleep
-three | three
+tree | tree
 bleat | bleat
 flapped | flapped
 trampled | trampled
