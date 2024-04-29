@@ -7,7 +7,6 @@ prohibited | forbidden by a law
 endangered | in imminent threat of extinction
 stimulate | cause to act in a specified manner
 recital | a public instance of repeating something prepared in advance
-conservative | resistant to change
 appropriate | suitable for a particular person, place, or situation
 disinterested | unaffected by concern for one's own welfare
 ```
