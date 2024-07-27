@@ -13,12 +13,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
-        token: ${{ secrets.DICTATIONSECRET }}  # Replace with your secret name
+        token: ${{ secrets.DICTATIONSECRET }}  # Use the secret for authentication
 
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.11'  # specify your Python version
+        python-version: '3.11'  # Specify your Python version
 
     - name: Run markdown-to-js script
       run: python markdown-to-js.py  # Adjust the path if necessary
@@ -31,4 +31,5 @@ jobs:
         git config --local user.name "GitHub Action"
         git add database.js
         git commit -m "Update database.js" -a || echo "No changes to commit"
+        git pull --rebase  # Pull the latest changes from the remote repository
         git push
