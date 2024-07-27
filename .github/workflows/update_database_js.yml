@@ -24,6 +24,8 @@ jobs:
       run: python markdown-to-js.py  # Adjust the path if necessary
 
     - name: Commit and push if changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.DICTATIONSECRET }}  # Use the secret token for authentication
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
