@@ -11,4 +11,5 @@ bleat | bleat
 flapped | flapped
 trampled | trampled
 squabble | squabble
+cloudformation | cloudformation
 ```
