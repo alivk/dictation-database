@@ -10,5 +10,4 @@ tree | tree
 bleat | bleat
 flapped | flapped
 trampled | trampled
-squabble | squabble
 ```
