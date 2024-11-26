@@ -51,7 +51,7 @@ const JSONList = [
     {
         "name": "One Target Homework HAP243 - 22 Jan 2024",
         "password": "",
-        "describe": "harmful | causing or capable of causing damage<br>swamp | low land that is seasonally flooded<br>menu | a list of dishes available at a restaurant<br>recipe | directions for making something<br>manual | of or relating to the hands<br>ingredient | a component of a mixture or compound<br>grace | elegance and beauty of movement or expression<br>horror | intense and profound fear<br>delight | a feeling of extreme pleasure or satisfaction",
+        "describe": "harmful | causing or capable of causing damage<br>swamp | low land that is seasonally flooded<br>menu | a list of dishes available at a restaurant<br>recipe | directions for making something<br>manual | of or relating to the hands<br>ingredient | a component of a mixture or compound<br>grace | elegance and beauty of movement or expression<br>horror | intense and profound fear<br>delight | a feeling of extreme pleasure and satisfaction",
         "id": "vocabulary-p2english-onetargethap243",
         "mode": "vocabulary"
     },
