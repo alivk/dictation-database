@@ -9,6 +9,6 @@ manual | of or relating to the hands
 ingredient | a component of a mixture or compound
 grace | elegance and beauty of movement or expression
 horror | intense and profound fear
-delight | a feeling of extreme pleasure or satisfaction
+delight | a feeling of extreme pleasure and satisfaction
 ```
 
