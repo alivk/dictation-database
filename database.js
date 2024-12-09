@@ -9,7 +9,7 @@ const JSONList = [
     {
         "name": "Zhonghua Homework P2 list 5 - 20 Feb 2024",
         "password": "",
-        "describe": "squirted | squirted<br>squeak | squeak<br>again | again<br>rain | rain<br>sleep | sleep<br>tree | tree<br>bleat | bleat<br>flapped | flapped<br>trampled | trampled",
+        "describe": "squirted | squirted<br>squeak | squeak<br>again | again<br>rain | rain<br>sleep | sleep<br>tree | tree<br>bleat | bleat<br>flapped | flapped",
         "id": "vocabulary-p2english-zhonghuapri005",
         "mode": "vocabulary"
     },
