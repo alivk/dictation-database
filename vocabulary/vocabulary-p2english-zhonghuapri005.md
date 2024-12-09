@@ -9,5 +9,4 @@ sleep | sleep
 tree | tree
 bleat | bleat
 flapped | flapped
-trampled | trampled
 ```
