@@ -6,7 +6,6 @@ squeak | squeak
 again | again
 rain | rain
 sleep | sleep
-tree | tree
 bleat | bleat
 flapped | flapped
 ```
