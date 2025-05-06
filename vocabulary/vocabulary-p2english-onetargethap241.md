@@ -3,7 +3,7 @@ PASSWORD = ""
 ```
 pollute | contaminate; make impure
 censor | a person authorized to suppress unacceptable material
-prohibited | forbidden by a law
+prohibited | forbidden by law
 endangered | in imminent threat of extinction
 stimulate | cause to act in a specified manner
 recital | a public instance of repeating something prepared in advance
